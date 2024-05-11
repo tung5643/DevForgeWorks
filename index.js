@@ -1,4 +1,3 @@
-const firstName = "John";
-const lastName = "Doe";
-const fullName = firstName + " " + lastName;
-console.log(fullName); // John Doe
+function rotateArray(arr, n) {
+  return arr.slice(n).concat(arr.slice(0, n));
+}
