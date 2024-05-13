@@ -1,10 +1,1 @@
-function hasCycle(head) {
-  let slow = head;
-  let fast = head;
-  while (fast && fast.next) {
-    slow = slow.next;
-    fast = fast.next.next;
-    if (slow === fast) return true;
-  }
-  return false;
-}
+const minN = (arr, n = 1) => [...arr].sort((a, b) => a - b).slice(0, n);
